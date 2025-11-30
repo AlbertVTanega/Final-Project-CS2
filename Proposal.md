@@ -12,40 +12,66 @@ This project solves the problem by developing a digital library borrowing system
 🎯 Project Objectives
 
 To analyze and summarize data from a library borrowing JSON dataset.
+
 To help librarians monitor borrowed and returned books easily.
+
 To apply JSON handling and Python programming concepts to solve a real-world problem.
+
 To identify overdue books automatically using date calculations.
+
 To improve library management by providing quick search and listing features.
 
 ⚙️ Planned Features
 
 Feature 1 – Display all borrowers and their borrowed books
 Shows student name, borrower ID, and the list of books they borrowed.
+
 Feature 2 – Show all unreturned books
 Filters entries where return_date = null or empty.
+
 Feature 3 – Count total books borrowed per student
 Displays:
 Student Name – Total Books Borrowed
+
 Feature 4 – Display overdue books
 Compares today’s date with borrow_date + allowed days (ex: 7 days).
+
 Feature 5 – Search for a book or a student
+
 Input may be:
+
 Book title
+
 Student name
+
 Borrower ID
+
 Shows matching records.
+
 ⌨️ Planned Inputs and Outputs
+
 Inputs
+
 Borrower ID
+
 Student name
+
 Book title
+
 Date (system will use Python’s datetime)
+
 Outputs
+
 List of borrowed books per student
+
 List of unreturned books
+
 List of overdue book
+
 Total books borrowed per student
+
 Search results
+
 
 ✅ 2. COMPLETE PSEUDOCODE 
 
