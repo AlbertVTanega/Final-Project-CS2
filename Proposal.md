@@ -95,4 +95,4 @@ END REPEAT
 
 END PROGRAM
 
-<img width="200" height="500" alt="image" src="https://github.com/user-attachments/assets/9915bd99-2a04-4015-88d6-54146032866a" />
+<img width="200" height="500" alt="flowchart" src="https://github.com/user-attachments/assets/dacf7de8-971f-4892-b065-8baa1280a855" />
