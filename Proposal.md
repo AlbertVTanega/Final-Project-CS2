@@ -1,46 +1,97 @@
-📌 Project Proposal (Draft)
-
-📝 Project Title
+✅ 1. REVISED & IMPROVED PROJECT PROPOSAL (Final Draft)
+📌 Project Title
 Library Borrowing Record System
-
 🔍 Problem Statement
-Many school libraries still record book borrowing using paper, which makes it hard to track borrowed and returned books. This causes delays, confusion, and missing records.  
-The project solves this problem by creating a digital system that stores and tracks student borrowers and the books they borrow using JSON data.  
-The dataset shows a list of students, their borrower IDs, and the books they borrowed with details like title, author, borrow date, and return date.
-
+Many school libraries still record book borrowings manually using paper logs. This process makes it difficult to track who borrowed which books, when they borrowed them, and whether the books were returned. As a result, librarians experience confusion, delays, missing records, and difficulty identifying overdue books.
+This project solves the problem by developing a digital library borrowing system using Python and JSON data. The dataset will store student borrowers, their borrower IDs, and details about the books they borrowed (title, author, borrow date, return date). The system will allow efficient tracking and monitoring of library borrowing transactions.
 🎯 Project Objectives
-Objective 1: To analyze and summarize data from the library borrowing JSON dataset.  
-Objective 2: To help librarians monitor borrowed and returned books easily.  
-Objective 3: To apply JSON handling and Python programming concepts in solving real problems.
-
+To analyze and summarize data from a library borrowing JSON dataset.
+To help librarians monitor borrowed and returned books easily.
+To apply JSON handling and Python programming concepts to solve a real-world problem.
+To identify overdue books automatically using date calculations.
+To improve library management by providing quick search and listing features.
 ⚙️ Planned Features
-Feature 1: Display all borrowers and their borrowed books. (Starter idea)  
-Feature 2: Show a list of books that are not yet returned. (Starter idea)  
-Feature 3: Count how many books each student borrowed. (Own idea)  
-Feature 4: Display overdue books based on borrow date. (Own idea)  
-Feature 5: Allow searching for a book title or student name. (Own idea)
-
+Feature 1 – Display all borrowers and their borrowed books
+Shows student name, borrower ID, and the list of books they borrowed.
+Feature 2 – Show all unreturned books
+Filters entries where return_date = null or empty.
+Feature 3 – Count total books borrowed per student
+Displays:
+Student Name – Total Books Borrowed
+Feature 4 – Display overdue books
+Compares today’s date with borrow_date + allowed days (ex: 7 days).
+Feature 5 – Search for a book or a student
+Input may be:
+Book title
+Student name
+Borrower ID
+Shows matching records.
 ⌨️ Planned Inputs and Outputs
-Inputs:
-- Borrower ID or student name  
-- Book title (for searching)  
-- Date range (optional for overdue checking)
+Inputs
+Borrower ID
+Student name
+Book title
+Date (system will use Python’s datetime)
+Outputs
+List of borrowed books per student
+List of unreturned books
+List of overdue book
+Total books borrowed per student
+Search results
+✅ 2. COMPLETE PSEUDOCODE 
+📘 Pseudocode for Library Borrowing Record System
+START PROGRAM
 
-Outputs:
-- List of borrowed books per student  
-- List of unreturned or overdue books  
-- Total books borrowed per student  
-- Search results for book or borrower
+Load JSON file containing library borrowers and their books
 
-🧠 Logic Plan (Pseudocode)
-Choose ONE way to describe your program’s logic:
+REPEAT
+    Display menu:
+        1. Show all borrowers and their borrowed books
+        2. Show all unreturned books
+        3. Count total books borrowed per student
+        4. Show overdue books
+        5. Search for a borrower or book
+        6. Exit program
 
-Option 1: Pseudocode
-Write your steps in plain English. Example:
-Load JSON file Display menu of features If user chooses "1", compute average grade per student If user chooses "2", list all borrowed books Repeat until user exits program
+    Ask user to enter a choice
 
-Option 2: Flowchart
-Attach or draw a flowchart showing how the program will work.
+    IF choice == 1 THEN
+        For each borrower in JSON:
+            Display borrower name, ID, and their books
 
-📂 GitHub Repository Link
-(https://github.com/AlbertVTanega/Final-Project-CS2)
+    ELSE IF choice == 2 THEN
+        For each borrower:
+            For each book borrowed:
+                IF return_date is empty THEN
+                    Display book as "Unreturned"
+
+    ELSE IF choice == 3 THEN
+        For each borrower:
+            Count number of books in their “borrowed_books” list
+            Display borrower name and total
+
+    ELSE IF choice == 4 THEN
+        For each borrower:
+            For each book:
+                Convert borrow_date to date format
+                Compute due_date = borrow_date + 7 days
+                IF return_date is empty AND today > due_date THEN
+                    Display book as "Overdue"
+
+    ELSE IF choice == 5 THEN
+        Ask user: "Search by book title or student name?"
+        Get search input
+        Search JSON for matching book title OR student name
+        Display results OR "No results found"
+
+    ELSE IF choice == 6 THEN
+        Display "Exiting program..."
+        BREAK LOOP
+
+    ELSE
+        Display "Invalid choice. Try again."
+
+END REPEAT
+
+END PROGRAM
+<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/9915bd99-2a04-4015-88d6-54146032866a" />
