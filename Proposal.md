@@ -1,16 +1,24 @@
 ✅ 1. REVISED & IMPROVED PROJECT PROPOSAL (Final Draft)
+
 📌 Project Title
+
 Library Borrowing Record System
+
 🔍 Problem Statement
+
 Many school libraries still record book borrowings manually using paper logs. This process makes it difficult to track who borrowed which books, when they borrowed them, and whether the books were returned. As a result, librarians experience confusion, delays, missing records, and difficulty identifying overdue books.
 This project solves the problem by developing a digital library borrowing system using Python and JSON data. The dataset will store student borrowers, their borrower IDs, and details about the books they borrowed (title, author, borrow date, return date). The system will allow efficient tracking and monitoring of library borrowing transactions.
+
 🎯 Project Objectives
+
 To analyze and summarize data from a library borrowing JSON dataset.
 To help librarians monitor borrowed and returned books easily.
 To apply JSON handling and Python programming concepts to solve a real-world problem.
 To identify overdue books automatically using date calculations.
 To improve library management by providing quick search and listing features.
+
 ⚙️ Planned Features
+
 Feature 1 – Display all borrowers and their borrowed books
 Shows student name, borrower ID, and the list of books they borrowed.
 Feature 2 – Show all unreturned books
@@ -38,8 +46,11 @@ List of unreturned books
 List of overdue book
 Total books borrowed per student
 Search results
+
 ✅ 2. COMPLETE PSEUDOCODE 
+
 📘 Pseudocode for Library Borrowing Record System
+
 START PROGRAM
 
 Load JSON file containing library borrowers and their books
