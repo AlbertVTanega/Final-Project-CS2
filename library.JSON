@@ -1,0 +1,44 @@
+[
+  {
+    "borrower_id": "S001",
+    "student_name": "Juan Dela Cruz",
+    "borrowed_books": [
+      {
+        "title": "Noli Me Tangere",
+        "author": "Jose Rizal",
+        "borrow_date": "2025-11-20",
+        "return_date": ""
+      },
+      {
+        "title": "El Filibusterismo",
+        "author": "Jose Rizal",
+        "borrow_date": "2025-11-15",
+        "return_date": "2025-11-25"
+      }
+    ]
+  },
+  {
+    "borrower_id": "S002",
+    "student_name": "Maria Santos",
+    "borrowed_books": [
+      {
+        "title": "Harry Potter",
+        "author": "J.K. Rowling",
+        "borrow_date": "2025-11-18",
+        "return_date": ""
+      }
+    ]
+  },
+  {
+    "borrower_id": "S003",
+    "student_name": "Carlo Reyes",
+    "borrowed_books": [
+      {
+        "title": "The Alchemist",
+        "author": "Paulo Coelho",
+        "borrow_date": "2025-11-10",
+        "return_date": ""
+      }
+    ]
+  }
+]
